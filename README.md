@@ -1,12 +1,1 @@
-# Eng. Abdalqader Abueta Portfolio — GitHub Pages Ready
-
-- جميع صور الواجهة مضمّنة داخل `index.html` بصيغة Data URI. لا يوجد مجلد صور.
-- CSS وJavaScript مضمّنان داخل الصفحة، ولا توجد مكتبات CDN مطلوبة.
-- وضع ليلي ونهاري كامل مع حفظ الاختيار.
-- العربية والإنجليزية مع RTL/LTR.
-- المشاريع الرئيسية مضافة مع حالة كل مشروع.
-- السيرة الذاتية هي الملف الخارجي الوحيد المطلوب للتحميل؛ صور الواجهة مضمّنة داخل الصفحة.
-- بطاقة Sway تعرض أحدث حالة Sway 5 ولا تربط بحزمة قديمة.
-
-## GitHub Pages
-ارفع كل الملفات إلى جذر المستودع ثم Settings → Pages → Deploy from a branch → main → /(root).
+# Eng. Abdalqader Abueta Portfolio — GitHub

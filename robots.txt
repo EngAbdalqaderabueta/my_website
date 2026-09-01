@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://eng-abdalqader-abueta.com/sitemap.xml

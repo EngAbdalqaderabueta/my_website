@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="BioMechaTech portfolio — intelligent mechatronics, AI, embedded systems and biomedical engineering." />
+  <meta name="theme-color" content="#071009" />
+  <title>Eng-Abdalqader-abueta.com — BioMechaTech Portfolio</title>
+  <link rel="canonical" href="https://eng-abdalqader-abueta.com/" />
+  <meta property="og:url" content="https://eng-abdalqader-abueta.com/" />
+  <meta property="og:title" content="Eng-Abdalqader-abueta.com — BioMechaTech Portfolio" />
+  <meta property="og:description" content="Abdalqader Abueta — Mechatronics, embedded systems, AI and biomedical engineering portfolio." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://eng-abdalqader-abueta.com/source-reference.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/png" href="./bmt-mark.png" />
+  <link rel="manifest" href="./site.webmanifest" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bmt: {
+              50: '#f2ffeb', 200: '#bbff95', 300: '#9aff68', 400: '#73ff2c',
+              500: '#59ea16', 600: '#3fc90b', 700: '#2e9708', 900: '#0a2307'
+            }
+          },
+          fontFamily: {
+            display: ['Orbitron', 'ui-sans-serif', 'system-ui'],
+            sans: ['Inter', 'ui-sans-serif', 'system-ui']
+          },
+          boxShadow: {
+            lime: '0 0 16px rgba(89,234,22,.55), 0 0 42px rgba(89,234,22,.20)',
+            glass: '0 10px 40px rgba(0,0,0,.38)'
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body class="bg-[#050805] text-zinc-100 selection:bg-bmt-400 selection:text-black">
+  <div id="progress" aria-hidden="true"></div>
+  <div class="site-bg" aria-hidden="true"></div>
+  <div class="aurora aurora-one" aria-hidden="true"></div>
+  <div class="aurora aurora-two" aria-hidden="true"></div>
+  <div class="grid-overlay" aria-hidden="true"></div>
+
+  <button id="scrollTop" class="scroll-top" type="button" aria-label="Scroll back to top"><i data-lucide="arrow-up"></i></button>
+
+  <header class="fixed inset-x-0 top-0 z-50 px-4 pt-3 sm:px-7 lg:px-16">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between rounded-[28px] border border-white/10 bg-[#071009]/75 px-3 py-2.5 shadow-glass backdrop-blur-2xl sm:px-5" aria-label="Primary navigation">
+      <a href="#home" class="group flex items-center gap-2.5 rounded-2xl px-1 py-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-bmt-300">
+        <span class="brand-mark-wrap"><img src="./bmt-mark.png" class="brand-mark" alt="BioMechaTech mark" /></span>
+        <span class="font-display text-lg font-bold tracking-tight text-white sm:text-xl">Bio<span class="text-bmt-400">Mecha</span>Tech</span>
+      </a>
+
+      <div class="hidden items-center gap-7 lg:flex" id="desktopNav">
+        <a class="nav-link active" href="#home">Home</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <button id="themeToggle" type="button" class="nav-action" aria-label="Toggle light / dark mode" title="Toggle light / dark mode"><i data-lucide="sun"></i></button>
+        <button id="languageToggle" type="button" class="nav-action lang-toggle" aria-label="Switch language" title="Switch language"><span>AR</span></button>
+        <button id="menuToggle" type="button" class="nav-action lg:hidden" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu"><i data-lucide="menu"></i></button>
+        <button id="botNavButton" type="button" class="nav-action hidden text-bmt-300 sm:inline-flex" aria-label="Open BMT bot"><i data-lucide="messages-square"></i></button>
+      </div>
+    </nav>
+
+    <div id="mobileMenu" class="mobile-menu mx-auto mt-2 max-w-7xl rounded-[24px] border border-white/10 bg-[#071009]/95 p-3 shadow-glass backdrop-blur-2xl lg:hidden" hidden>
+      <a class="mobile-nav-link" href="#home">Home</a>
+      <a class="mobile-nav-link" href="#about">About</a>
+      <a class="mobile-nav-link" href="#projects">Projects</a>
+      <a class="mobile-nav-link" href="#skills">Skills</a>
+      <a class="mobile-nav-link" href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <aside class="quick-rail left-3 top-1/2 hidden -translate-y-1/2 xl:flex" aria-label="Quick navigation">
+    <a href="#home" class="quick-link active" aria-label="Home"><i data-lucide="house"></i></a>
+    <a href="#about" class="quick-link" aria-label="About"><i data-lucide="user-round"></i></a>
+    <a href="#projects" class="quick-link" aria-label="Projects"><i data-lucide="briefcase-business"></i></a>
+    <a href="#skills" class="quick-link" aria-label="Skills"><i data-lucide="code-xml"></i></a>
+    <a href="#contact" class="quick-link" aria-label="Contact"><i data-lucide="mail"></i></a>
+  </aside>
+
+  <aside class="social-rail right-3 top-1/2 -translate-y-1/2" aria-label="Social links">
+    <button type="button" class="social-link" data-social="Facebook" aria-label="Facebook" title="Facebook"><svg class="brand-svg" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13.7 22v-8h2.7l.4-3h-3.1V9.1c0-.9.3-1.5 1.6-1.5H17V5c-.3 0-1.2-.1-2.3-.1-2.3 0-4 1.4-4 4.1v2H8v3h2.7v8h3z"/></svg></button>
+    <button type="button" class="social-link" data-social="GitHub" aria-label="GitHub" title="GitHub"><svg class="brand-svg" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .8A11.4 11.4 0 0 0 8.4 23c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.5-1.4-1.3-1.8-1.3-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.9 1.2 1.9 1.2 1.1 1.9 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.4-1.3-5.4-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0C16.1 4.7 17 5 17 5c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.5-2.8 5.4-5.4 5.7.4.4.8 1.1.8 2.1v3.4c0 .3.2.7.8.6A11.4 11.4 0 0 0 12 .8Z"/></svg></button>
+    <button type="button" class="social-link" data-social="LinkedIn" aria-label="LinkedIn" title="LinkedIn"><svg class="brand-svg" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M5.3 8.3H2V22h3.3V8.3ZM3.6 2A2 2 0 1 0 3.6 6a2 2 0 0 0 0-4ZM22 14.1c0-4.1-2.2-6-5.2-6a4.5 4.5 0 0 0-4.1 2.3h-.1V8.3H9.4V22h3.4v-6.8c0-1.8.3-3.5 2.5-3.5 2.1 0 2.2 2 2.2 3.6V22H22v-7.9Z"/></svg></button>
+    <button type="button" class="social-link" data-social="Instagram" aria-label="Instagram" title="Instagram"><svg class="brand-svg" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg></button>
+    <button type="button" class="social-link" data-social="WhatsApp" aria-label="WhatsApp" title="WhatsApp"><svg class="brand-svg" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" d="M20.6 11.7a8.6 8.6 0 0 1-12.7 7.6L3 20.6l1.3-4.7a8.6 8.6 0 1 1 16.3-4.2Z"/><path fill="currentColor" d="M8.2 7.5c.2-.4.4-.4.7-.4h.5c.2 0 .4.1.5.4l.8 2c.1.3 0 .5-.1.7l-.7.9c-.1.2-.2.3 0 .6.5.9 1.3 1.7 2.2 2.2.3.2.5.2.7 0l1-1.2c.2-.2.4-.3.7-.2l1.9.9c.3.1.5.3.5.5 0 .3-.1 1.5-.8 2.1-.6.6-1.5.9-2.5.7-1.1-.2-2.6-.7-4.3-2.2-2-1.8-3.2-4-3.4-5.2-.2-.9.1-1.5.5-1.8Z"/></svg></button>
+    <button type="button" class="social-link" data-social="Behance" aria-label="Behance" title="Behance"><svg class="brand-svg" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 5h7c3 0 4.8 1.5 4.8 4 0 1.7-.8 2.9-2.1 3.5 1.8.5 2.8 2 2.8 4.1 0 3.1-2.2 4.4-5.5 4.4H3V5Zm3.1 6.4h3.3c1.3 0 2.2-.6 2.2-1.8 0-1.3-.8-1.8-2.3-1.8H6.1v3.6Zm0 6.8h3.6c1.7 0 2.6-.6 2.6-2.1s-.9-2.1-2.6-2.1H6.1v4.2Z"/><path fill="currentColor" d="M16.6 6.4H22v1.7h-5.4V6.4Zm5.8 9.1h-6.1c.1 1.9 1 3 2.7 3 1.2 0 2.1-.7 2.3-1.4h2.8c-.9 2.8-2.8 4-5.2 4-3.5 0-5.7-2.4-5.7-5.9 0-3.4 2.3-5.9 5.7-5.9 3.8 0 5.6 3.2 5.4 6.2Zm-6.1-2h3.9c-.3-1.6-1-2.3-2-2.3-1.6 0-2 1.2-1.9 2.3Z" transform="translate(-1 0) scale(.9)"/></svg></button>
+    <button type="button" class="social-link" data-social="Email" aria-label="Email" title="Email"><svg class="brand-svg" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m4.5 7 7.5 6 7.5-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+  </aside>
+
+  <main id="cubeApp" class="cube-app" aria-live="polite">
+    <section id="home" class="hero-section relative flex min-h-screen items-center overflow-hidden px-5 pb-16 pt-28 sm:px-10 lg:px-20 xl:px-28">
+      <div class="hero-orbit hero-orbit-a" aria-hidden="true"></div>
+      <div class="hero-orbit hero-orbit-b" aria-hidden="true"></div>
+      <div class="hero-content relative z-10 mx-auto grid w-full max-w-7xl items-center gap-8 lg:grid-cols-[1.08fr_.92fr] lg:gap-2">
+        <div class="max-w-3xl pt-3 lg:pt-0">
+          <div class="reveal inline-flex items-center gap-2 rounded-full border border-bmt-400/30 bg-[#081a0a]/70 px-4 py-2 text-xs font-bold tracking-wide text-zinc-200 shadow-[0_0_18px_rgba(89,234,22,.12)] backdrop-blur-md sm:text-sm">
+            <span class="h-2 w-2 rounded-full bg-bmt-400 shadow-lime"></span>
+            MECHATRONICS <span class="text-bmt-400">•</span> AI <span class="text-bmt-400">•</span> BIOMEDICAL SYSTEMS
+            <i data-lucide="arrow-right" class="ml-1 h-3.5 w-3.5 text-bmt-400"></i>
+          </div>
+
+          <h1 class="reveal reveal-delay-1 mt-7 font-display text-[clamp(2.35rem,7.2vw,6.7rem)] font-extrabold leading-[.92] tracking-[-.06em] text-white">
+            <span class="block hero-outline">ENGINEERING</span>
+            <span class="mt-3 block text-bmt-400 text-glow">THE FUTURE</span>
+          </h1>
+
+          <p class="reveal reveal-delay-2 mt-7 max-w-2xl border-l-2 border-bmt-400 pl-5 text-base leading-8 text-zinc-300 sm:text-lg">
+            I design intelligent systems that unite <span class="text-white">hardware, software and AI</span>
+            to solve <span class="font-semibold text-bmt-400">real-world problems.</span>
+          </p>
+
+          <div class="reveal reveal-delay-3 mt-8 flex flex-wrap gap-3">
+            <a href="#projects" class="btn-primary"><i data-lucide="zap"></i> Explore My Work</a>
+            <a href="#contact" class="btn-secondary"><i data-lucide="send"></i> Contact Me</a>
+          </div>
+
+          <div class="reveal reveal-delay-4 mt-9 grid max-w-2xl grid-cols-2 overflow-hidden rounded-2xl border border-white/15 bg-[#06110a]/55 shadow-glass backdrop-blur-xl sm:grid-cols-4">
+            <div class="metric-card"><i data-lucide="cpu" class="text-bmt-400"></i><strong>12</strong><span>Projects</span></div>
+            <div class="metric-card"><i data-lucide="bot" class="text-bmt-400"></i><strong>4+</strong><span>Years Exp.</span></div>
+            <div class="metric-card"><i data-lucide="code-xml" class="text-bmt-400"></i><strong class="text-lg">Dev &amp; Eng.</strong><span>Full Stack</span></div>
+            <div class="metric-card last"><i data-lucide="heart-pulse" class="text-bmt-400"></i><strong class="text-lg">Passion</strong><span>Innovation</span></div>
+          </div>
+        </div>
+
+        <div class="relative hidden min-h-[590px] lg:block" aria-label="BioMechaTech robot visual">
+          <button id="botBubble" type="button" class="bot-bubble" aria-label="Open BMT Bot chat">
+            <span class="text-xl">Hey! 👋</span><strong>I’m BMT Bot</strong><span class="bot-wave"><i data-lucide="activity"></i></span>
+          </button>
+        </div>
+      </div>
+
+      <button id="nextFaceCue" type="button" class="scroll-cue group" aria-label="Move to next portfolio face"><span>CLICK / WHEEL</span><span class="mouse"><b></b></span><i data-lucide="chevron-down" class="text-bmt-400"></i></button>
+    </section>
+
+    <section id="about" class="content-section section-border px-5 py-24 sm:px-10 lg:px-20 xl:px-28">
+      <div class="mx-auto grid max-w-7xl gap-11 lg:grid-cols-[.8fr_1.2fr] lg:items-center">
+        <div class="glass-card relative overflow-hidden p-7 sm:p-9">
+          <div class="absolute -right-14 -top-14 h-48 w-48 rounded-full bg-bmt-400/15 blur-3xl"></div>
+          <div class="relative flex items-center gap-5"><div class="avatar-core"><i data-lucide="cpu"></i></div><div><span class="eyebrow">ABOUT THE ENGINEER</span><h2 class="mt-2 font-display text-2xl font-bold text-white sm:text-3xl">BioMechaTech</h2></div></div>
+          <div class="relative mt-7 space-y-4 text-sm leading-7 text-zinc-300 sm:text-base">
+            <p>Created for <span class="font-semibold text-white">Abdalqader Abueta</span>, a Mechatronics Engineering student focused on practical, human-centred technology.</p>
+            <p>My work bridges intelligent embedded systems, biomedical devices, automation, computer vision and product engineering.</p>
+          </div>
+          <div class="relative mt-7 flex flex-wrap gap-2"><span class="skill-pill">Biomedical Mechatronics</span><span class="skill-pill">Embedded Systems</span><span class="skill-pill">AI / IoT</span><span class="skill-pill">SolidWorks</span></div>
+        </div>
+
+        <div>
+          <span class="eyebrow">MISSION</span>
+          <h2 class="mt-4 max-w-3xl font-display text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">Building systems that make engineering feel <span class="text-bmt-400">more human.</span></h2>
+          <p class="mt-6 max-w-3xl text-base leading-8 text-zinc-300 sm:text-lg">I combine mechanics, electronics and code into solutions that can move beyond the lab: rehabilitation concepts, intelligent irrigation, real-time control and assistive technologies.</p>
+          <div class="mt-8 grid gap-3 sm:grid-cols-3">
+            <div class="mini-info"><i data-lucide="brain-circuit"></i><span>AI-driven decisions</span></div>
+            <div class="mini-info"><i data-lucide="wrench"></i><span>Design for buildability</span></div>
+            <div class="mini-info"><i data-lucide="shield-check"></i><span>Safety-focused control</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="content-section px-5 py-24 sm:px-10 lg:px-20 xl:px-28">
+      <div class="mx-auto max-w-7xl">
+        <div class="flex flex-col justify-between gap-6 sm:flex-row sm:items-end"><div><span class="eyebrow">SELECTED WORK</span><h2 class="mt-3 font-display text-3xl font-bold text-white sm:text-4xl">Projects engineered to <span class="text-bmt-400">perform.</span></h2></div><button id="viewAllProjects" class="btn-secondary shrink-0" type="button"><i data-lucide="layers-3"></i> View All Work</button></div>
+        <div class="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+          <article class="project-card" data-project="biomechCode"><div class="project-icon"><i data-lucide="braces"></i></div><span class="project-type">Flutter • Education</span><h3>BioMechTech Code 2.5</h3><p>Offline bilingual programming platform with 19 technologies, 476 lessons, 762 verified examples and an educational IDE.</p><button class="project-more" type="button">View project <i data-lucide="arrow-up-right"></i></button></article>
+          <article class="project-card" data-project="simulinker"><div class="project-icon"><i data-lucide="box"></i></div><span class="project-type">Mobile CAD • Flutter</span><h3>SimuLinker 3.5</h3><p>Touch-first mechanical CAD and motion-simulation prototype with parametric workflows, radial tools and Shop-Floor Mode.</p><button class="project-more" type="button">View project <i data-lucide="arrow-up-right"></i></button></article>
+          <article class="project-card highlighted" data-project="swayApp"><div class="project-icon"><i data-lucide="sparkles"></i></div><span class="project-type">Flutter • Portfolio App</span><h3>Sway 7 Portfolio Edition</h3><p>Bilingual cinematic creator app with local MP4 rendering, creator/community foundations and a complete product story.</p><button class="project-more" type="button">Download project <i data-lucide="download"></i></button></article>
+          <article class="project-card" data-project="hvacGuide"><div class="project-icon"><i data-lucide="fan"></i></div><span class="project-type">HVAC • Flutter</span><h3>HVAC Guide 2.0</h3><p>ASHRAE-based training and AutoCAD drafting guide with 20 exercises, smart local chat and engineering workflow generation.</p><button class="project-more" type="button">View project <i data-lucide="arrow-up-right"></i></button></article>
+          <article class="project-card" data-project="engineersWeapon"><div class="project-icon"><i data-lucide="hard-hat"></i></div><span class="project-type">Engineering Platform • Flutter</span><h3>Engineer's Weapon 1.1</h3><p>Mobile-first bilingual engineering workspace combining multiple engineering-inspired modules in one expandable architecture.</p><button class="project-more" type="button">View project <i data-lucide="arrow-up-right"></i></button></article>
+          <article class="project-card" data-project="engStandard"><div class="project-icon"><i data-lucide="book-open-check"></i></div><span class="project-type">Standards • Flutter</span><h3>EngStandard 2.0</h3><p>Scope-aware engineering standards navigator with 85 selectable scopes, 45 reference records and 210 offline knowledge cards.</p><button class="project-more" type="button">View project <i data-lucide="arrow-up-right"></i></button></article>
+          <article class="project-card" data-project="carDiagnostic"><div class="project-icon"><i data-lucide="car-front"></i></div><span class="project-type">Automotive • Flutter</span><h3>Car Diagnostic 1.1</h3><p>Offline diagnostic portfolio app with dashboard, searchable fault library, 28 brands, 196 models and 29 fault codes.</p><button class="project-more" type="button">View project <i data-lucide="arrow-up-right"></i></button></article>
+          <article class="project-card" data-project="exoskeleton"><div class="project-icon"><i data-lucide="accessibility"></i></div><span class="project-type">Biomedical • Mechatronics</span><h3>Modular Rehabilitation Exoskeleton</h3><p>Research-prototype package combining mechanical architecture, sensing, motor control, firmware, safety and documentation.</p><button class="project-more" type="button">View project <i data-lucide="arrow-up-right"></i></button></article>
+          <article class="project-card" data-project="irrigation"><div class="project-icon"><i data-lucide="droplets"></i></div><span class="project-type">Embedded • RTOS</span><h3>Smart Irrigation System</h3><p>STM32-based irrigation control with sensor monitoring, pump safety, OLED feedback and UART reporting.</p><button class="project-more" type="button">View project <i data-lucide="arrow-up-right"></i></button></article>
+          <article class="project-card" data-project="iot"><div class="project-icon"><i data-lucide="cpu"></i></div><span class="project-type">ESP32 • IoT Firmware</span><h3>Industrial ESP32 IoT Firmware</h3><p>Layered ESP32 firmware for signal processing, alarms, durable records, local journal storage and MQTT/AWS boundaries.</p><button class="project-more" type="button">View project <i data-lucide="arrow-up-right"></i></button></article>
+          <article class="project-card" data-project="cad"><div class="project-icon"><i data-lucide="drafting-compass"></i></div><span class="project-type">CAD • Product Design</span><h3>Mechanism Design</h3><p>SolidWorks concepts developed around assemblies, actuation, manufacturability and practical implementation.</p><button class="project-more" type="button">View project <i data-lucide="arrow-up-right"></i></button></article>
+          <article class="project-card" data-project="ai"><div class="project-icon"><i data-lucide="scan-line"></i></div><span class="project-type">AI • Intelligent Systems</span><h3>Intelligent Control</h3><p>Data-driven monitoring and decision logic that connect sensor readings, automation and embedded control.</p><button class="project-more" type="button">View project <i data-lucide="arrow-up-right"></i></button></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="content-section section-border px-5 py-24 sm:px-10 lg:px-20 xl:px-28">
+      <div class="mx-auto max-w-7xl"><div class="max-w-3xl"><span class="eyebrow">TOOLKIT</span><h2 class="mt-3 font-display text-3xl font-bold text-white sm:text-4xl">Hardware logic. Software craft. <span class="text-bmt-400">One system.</span></h2></div>
+      <div class="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+        <div class="skill-panel"><i data-lucide="circuit-board"></i><h3>Embedded</h3><p>STM32, ESP32, AVR, FreeRTOS, C/C++, UART, I²C, ADC, Proteus.</p></div>
+        <div class="skill-panel"><i data-lucide="code-2"></i><h3>Software</h3><p>Python, MATLAB, JavaScript, Flutter/Dart and control-oriented application logic.</p></div>
+        <div class="skill-panel"><i data-lucide="component"></i><h3>Mechanical</h3><p>SolidWorks, AutoCAD, mechanism design, assemblies and physical prototyping.</p></div>
+        <div class="skill-panel"><i data-lucide="heart-pulse"></i><h3>Biomedical</h3><p>Assistive devices, rehabilitation systems, EMG/FSR sensing and human-centric design.</p></div>
+      </div></div>
+    </section>
+
+    <section id="contact" class="content-section px-5 py-24 sm:px-10 lg:px-20 xl:px-28">
+      <div class="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[.9fr_1.1fr]">
+        <div class="glass-card p-7 sm:p-9"><span class="eyebrow">LET’S CONNECT</span><h2 class="mt-4 font-display text-3xl font-bold leading-tight text-white sm:text-4xl">Have an idea that needs a <span class="text-bmt-400">working system?</span></h2><p class="mt-5 leading-7 text-zinc-300">Send a message from the form and BMT will prepare a ready-to-send email draft in your email app.</p>
+        <div class="mt-8 space-y-3">
+          <div class="contact-line"><i data-lucide="cpu"></i><span>Mechatronics • AI • Biomedical Systems</span></div>
+          <a class="contact-line contact-action" href="https://wa.me/972594639999" target="_blank" rel="noreferrer"><i data-lucide="message-circle"></i><span>WhatsApp: +972 59 463 9999</span></a>
+          <a class="contact-line contact-action" href="https://github.com/EngAbdalqaderabueta" target="_blank" rel="noreferrer"><i data-lucide="github"></i><span>github.com/EngAbdalqaderabueta</span></a>
+          <a class="contact-line contact-action" href="https://www.linkedin.com/in/abdalqader-h-abueta-71a189360" target="_blank" rel="noreferrer"><i data-lucide="linkedin"></i><span>LinkedIn — Abdalqader Abueta</span></a>
+          <a class="contact-line contact-action" href="https://www.instagram.com/eng_abdalqader4" target="_blank" rel="noreferrer"><i data-lucide="instagram"></i><span>@eng_abdalqader4</span></a>
+          <a class="contact-line contact-action" href="https://www.behance.net/abdalqaabueta" target="_blank" rel="noreferrer"><i data-lucide="palette"></i><span>Behance — abdalqaabueta</span></a>
+          <button class="contact-line contact-action" type="button" data-social="Facebook"><i data-lucide="facebook"></i><span>Facebook</span></button>
+          <button class="contact-line contact-action" type="button" data-copy-email="aboodxxxc@gmail.com"><i data-lucide="mail"></i><span>aboodxxxc@gmail.com</span></button>
+          <button class="contact-line contact-action" type="button" data-copy-email="biomechatech4@gmail.com"><i data-lucide="mail-plus"></i><span>biomechatech4@gmail.com</span></button>
+          <button id="downloadProfile" type="button" class="contact-line contact-action"><i data-lucide="download"></i><span>Download CV (2026)</span></button>
+        </div></div>
+
+        <form id="contactForm" class="glass-card p-6 sm:p-9" novalidate>
+          <div class="grid gap-4 sm:grid-cols-2"><label class="field-label"><span class="label-text" data-label-key="form.name">Name</span><input class="field-input" type="text" name="name" autocomplete="name" placeholder="Your name" required /></label><label class="field-label"><span class="label-text" data-label-key="form.email">Email</span><input class="field-input" type="email" name="email" autocomplete="email" placeholder="you@example.com" required /></label></div>
+          <label class="field-label mt-4 block"><span class="label-text" data-label-key="form.subject">Subject</span><input class="field-input" type="text" name="subject" placeholder="Project inquiry" required /></label>
+          <label class="field-label mt-4 block"><span class="label-text" data-label-key="form.message">Message</span><textarea class="field-input min-h-32 resize-y" name="message" placeholder="Tell me about your idea…" required></textarea></label>
+          <div class="mt-6 flex flex-wrap items-center gap-3"><button class="btn-primary" type="submit"><i data-lucide="send"></i> Prepare Message</button><span id="formStatus" class="text-sm text-zinc-400" role="status"></span></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <div class="cube-controls" aria-label="Portfolio face controls">
+    <button id="facePrev" class="face-nav-button" type="button" aria-label="Previous face"><i data-lucide="chevron-left"></i></button>
+    <div id="faceDots" class="face-dots" role="tablist" aria-label="Portfolio sections"></div>
+    <button id="faceNext" class="face-nav-button" type="button" aria-label="Next face"><i data-lucide="chevron-right"></i></button>
+  </div>
+  <div class="swipe-hint" aria-hidden="true"><i data-lucide="move-horizontal"></i> Swipe to switch faces</div>
+
+  <footer class="border-t border-white/10 bg-black/25 px-5 py-7 sm:px-10 lg:px-20 xl:px-28"><div class="mx-auto flex max-w-7xl flex-col gap-3 text-sm text-zinc-500 sm:flex-row sm:items-center sm:justify-between"><p>© <span id="year"></span> BioMechaTech. Eng-Abdalqader-abueta.com</p><div class="flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-bmt-400 shadow-lime"></span> Systems online</div></div></footer>
+
+  <div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden><div class="modal-backdrop" data-close-modal></div><div class="modal-card" role="document"><button class="modal-close" type="button" data-close-modal aria-label="Close project details"><i data-lucide="x"></i></button><div class="modal-icon"><i id="modalIcon" data-lucide="cpu"></i></div><p id="modalKicker" class="eyebrow"></p><h2 id="modalTitle" class="mt-3 font-display text-2xl font-bold text-white sm:text-3xl"></h2><p id="modalText" class="mt-4 leading-7 text-zinc-300"></p><div id="modalTags" class="mt-6 flex flex-wrap gap-2"></div><div id="modalActions" class="modal-actions"></div><button class="btn-primary mt-5" type="button" data-close-modal><i data-lucide="check"></i> Got it</button></div></div>
+
+
+  <aside id="bmtCompanion" class="bmt-companion" data-zone="home" aria-label="BMT Bot companion">
+    <div id="bmtSpeech" class="bmt-speech" role="status" aria-live="polite">
+      <span id="bmtSpeechText">Systems online. Click me to talk.</span>
+      <button id="bmtSpeechClose" type="button" aria-label="Dismiss BMT Bot message"><i data-lucide="x"></i></button>
+    </div>
+    <button id="bmtCompanionButton" class="bmt-companion__button" type="button" aria-label="Open BMT Bot chat" aria-describedby="bmtSpeechText">
+      <span class="bmt-orb" aria-hidden="true">
+        <span class="bmt-orb__photo"></span>
+        <span class="bmt-orb__shine"></span>
+        <span class="bmt-orb__online"></span>
+      </span>
+      <span class="bmt-companion__caption" aria-hidden="true"><span class="bmt-companion__status-dot"></span>BMT BOT</span>
+    </button>
+  </aside>
+
+  <section id="chatPanel" class="chat-panel" aria-label="BMT Bot chat" aria-live="polite" hidden>
+    <div class="chat-topbar"><div class="flex items-center gap-3"><span class="bot-mini"><i data-lucide="bot"></i></span><div><strong>BMT Bot</strong><small>Online now</small></div></div><button id="closeChat" type="button" class="chat-close" aria-label="Close BMT Bot"><i data-lucide="x"></i></button></div>
+    <div id="chatMessages" class="chat-messages"><div class="bot-message">Hey! 👋 I’m BMT Bot. Ask me about projects, skills or how to get in touch.</div><div class="quick-prompts"><button type="button" data-prompt="Show projects">Show projects</button><button type="button" data-prompt="Download Sway 5 app">Sway 5</button><button type="button" data-prompt="Open GitHub">GitHub</button><button type="button" data-prompt="How can I contact you?">Contact</button></div></div>
+    <form id="chatForm" class="chat-input-wrap"><input id="chatInput" type="text" placeholder="Type a message…" aria-label="Chat message" /><button type="submit" aria-label="Send chat message"><i data-lucide="send-horizontal"></i></button></form>
+  </section>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
